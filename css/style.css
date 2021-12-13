@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*                  Slider                          */
+.slider{
+    background: rgb(197, 197, 197);
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sliderContainer{
+    
+    width: 1000px;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+.sliderText{
+    padding: 20px;
+    max-width: 400px;
+}
+.sliderText h1{
+    font-size: 35px;
+    margin: 10px;
+    text-align: center;
+}
+.sliderText p{
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+
+}
+.btComprar{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    margin: 20px auto;
+    text-decoration: none;
+}
+
+
+.container{
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 10px auto;
+    padding-bottom: 50px;
+    position: relative;
+}
+/*                  exemplos                          */
+.exemplos{
+    border-radius: 20px 20px 0 0 ;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    position: relative;
+    top: -120px;
+    left: 0;
+    background-color: #fff;
+}
+.imagemExemplo{
+    background: rgb(167, 167, 167);
+    max-width: 100%;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.imagemExemplo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.imagemExemplo a{
+    position: absolute;
+    background: rgb(197, 197, 197);
+    border: 1px solid black;
+    color: black;
+    padding: 10px;
+    font-weight: 900;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+    
+}
+
+/*                  Produtos em Alta                */
+
+.gradeProdutos{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+.titulo{
+    text-align: center;
+    position: relative;
+    top: -50px;
+    font-size: 50px;
+}
+.linha{
+    width: 130px;
+    height: 4px;
+    margin: 0 auto;
+    background: black;
+    position: relative;
+    top: -50px;
+}
+.produto{
+    max-width: 100%;
+    min-height: 380px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgb(231, 231, 231);
+    border-radius: 10px; 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 30px;
+    
+}
+.produto:hover{
+    border: 2px solid rgb(75, 75, 75);
+    box-shadow: 0 0 20px black;
+}
+.imgProduto{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(228, 228, 228); 
+}
+.produto img{
+    width: 100%;
+    object-fit:contain;
+}
+.descricaoProduto{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 30px;
+}
+.descTextProduto{
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.preco{
+    display: block;
+    font-size: 17px;
+    font-weight: 800;
+}
+.btProduto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btProduto ul{
+    display: flex;
+    justify-content: center;align-items: center;
+}
+.btProduto li{
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*                      Oferta do dia                   */
+.ofertaDia{
+    margin-top:150px ;
+    width: 100%;
+    height: 30vh;
+    background: rgb(228, 228, 228);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+}
+.descOfertaDia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    height: 70%;
+    
+}
+.descOfertaDia h1{
+    font-size: 40px;
+    margin-top: 30px;
+}
+.descOfertaDia .preco{
+    font-size: 25px;
+}
+.imgOfertaDia{
+    position: relative;
+    top: -100px;
+    right: 0;
+    width: 100%;
+}
+.imgOfertaDia img{
+    width: 100%;
+}
+.imgOfertaDia .linha{
+    width: 85%;
+    height: 10px;
+    box-shadow: 0 0 50px black;
+    background: rgb(95, 95, 95);
+    filter: blur(10px);
+    position: relative;
+    left: -30px;
+    top: -25px;
+}
+.ofertaDia.of2{
+   margin-bottom: 120px;
+}
+.ofertaDia.of2 .imgOfertaDia{
+    left: 0;
+}
+.ofertaDia.of2 .descOfertaDia{
+    right:0;
+}
+.ofertaDia.of2 .linha{
+    left:3px;
+    width: 90%;
+    
+}
+
+.conceitoDesign{
+    margin-top: 100px;
+}
+.gradeConceitos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.conceito{
+    max-width: 580px;
+    margin: 10px;
+}
+.imgConceito{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+.imgConceito img{
+    width: 100%;
+}
+
+.atribuicao{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.atribuicao span{
+    font-size: 15px;
+    background-color: orange;
+    text-align: center;
+    line-height: 30px;
+    padding: 10px;
+}
+.atribuicao a{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 15px;
+    background-color: orange;
+    color: black;
+    text-align: center;
+    line-height: 30px; 
+    text-decoration: none;
+    font-weight: 900;
+}
+footer{
+    display: flex;
+    max-width: 100%;
+    min-height: 40vh;
+    justify-content: center;
+    align-items: center;
+    background: #ff7b00e3;
+}
+
+.contato{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contato h1 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-shadow: 2px 10px 100px white;
+    font-weight: bold;
+}
+.contato h2 {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+}
+.contato a {
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+}
+.contato a:hover {
+    color: rgb(255, 83, 83);
+    
+}
+.contato ul{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.icon{
+    color: white;
+    font-size: 40px;
+    margin: 30px;
+}
+.icon:hover{
+    color: rgb(255, 83, 83);
+}
+
+@media (max-width:999px){
+    .sliderContainer{
+        flex-direction: column;
+    }
+    .sliderText{
+        position: absolute;
+        background: rgba(167, 167, 167, 0.425);
+        max-width: 300px;
+    }
+    .exemplos{
+        grid-template-columns: repeat(2,1fr);  
+    }
+    .imagemExemplo a{
+        position: absolute;
+        bottom: 0;
+        opacity: 0.7;
+    }
+    .gradeProdutos{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .descricaoProduto{
+        grid-template-columns:1fr;
+        text-align: center;
+    }
+    .ofertaDia{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 50vh;
+        padding: 10px;
+    }
+    .imgOfertaDia{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        top: -10px;
+    }
+    .imgOfertaDia img{
+        max-width: 100%;
+    }
+    .descOfertaDia{
+        display: block;
+        top: 0;
+    }
+    .descOfertaDia h1{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .ofertaDia.of2{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 50vh;
+        padding: 10px;
+    }
+    .ofertaDia.of2 .imgOfertaDia{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        top: 30px;
+    }
+    .ofertaDia.of2 .descOfertaDia{
+        top: -20px;
+    }
+    .imgOfertaDia .linha{
+        display: none;
+    }
+    
+}
+
+@media (max-width:350px){
+    .descOfertaDia h1{
+        font-size: 20px;
+        
+    }
+    
+}
+
+
