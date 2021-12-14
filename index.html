@@ -12,45 +12,32 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#" class="logo"><img src="./logos/studioLogoBranco.png" alt="studioMoveisVendas"></a>
-            <div class="mobileMenu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+    <nav>
+        <a href="#" class="logo"><img src="./logos/studioLogoBranco.png" alt=""></a>
+        <div class="mobileMenu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
 
-            <ul class="navList">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contatos</a></li>
-                <li><a>
-                        <ion-icon name="logo-whatsapp"></ion-icon>
-                    </a></li>
-                <li><a>
-                        <ion-icon name="logo-facebook"></ion-icon>
-                    </a></li>
-                <li><a>
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="slider">
-            <div class="sliderContainer">
-                <div class="sliderText">
-                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident labore nostrum voluptatibus
-                        veniam vitae ea, maxime, velit sequi, optio et eaque. Sit repudiandae quia necessitatibus
-                        debitis dolorem fugit consectetur doloremque.</p>
-                    <a class="btComprar" href="#"><span>Comprar agora</span></a>
-                </div>
-                <img src="./imagens/cadeiraBege.png" alt="">
-            </div>
-        </section>
+        <ul class="navList">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#sb">Sobre</a></li>
+            <li><a href="#ap">Apresentação</a></li>
+            <li><a href="#gl">Galeria</a></li>
+            
+            
+
+        </ul>
+    </nav>
+   <main>
+    <section class="banner">
+        <div class="imgFundo">
+            <img src="./conceito/lissete-laverde-7jOeRc0dOWs-unsplash.jpg">
+        </div>
+        <img class="imgLogo" src="logos/studioLogoBranco.png">
+        
+    </section>
         <section class="container">
             <section class="exemplos">
                 <div class="imagemExemplo">
@@ -70,7 +57,7 @@
                     <a href="#">Lindas Almofadas</a>
                 </diV>
             </section>
-            <section>
+           <section>
                 <h1 class="titulo">Produtos em Alta</h1>
                 <div class="linha"></div>
                 <div class="gradeProdutos">
@@ -198,13 +185,15 @@
             <section>
                 <h1 class="titulo">Produtos</h1>
                 <div class="linha"></div>
-                <div class="gradeProdutos">
-                    <div class="produto">
+
+                <div class="gradeProdutos"> <!-- Inicio Grade Produtos -->
+
+                    <div class="produto"><!-- Inicio Produtos -->
                         <div class="imgProduto">
                             <img src="./imagens/aparelhoJantar.png" alt="Aparelho de Jantar">
                         </div>
 
-                        <div class="descricaoProduto">
+                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
                             <div>
                                 <span class="descTextProduto">Aparelho de Jantar</span>
                                 <span class="preco">R$ 299,99</span>
@@ -219,18 +208,18 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
+                        </div><!-- Final desc Produtos -->
+                    </div><!-- Final Produtos -->
 
-                    <div class="produto">
+                    <div class="produto"><!-- Inicio Produtos -->
                         <div class="imgProduto">
-                            <img src="./imagens/panelas.png" alt="Jogo de Panelas Inox">
+                            <img src="./imagens/cadeiraBege.png" alt="Cadeira bege">
                         </div>
 
-                        <div class="descricaoProduto">
+                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
                             <div>
-                                <span class="descTextProduto">Jogo de Panelas Inox</span>
-                                <span class="preco">R$ 499,99</span>
+                                <span class="descTextProduto">Cadeira </span>
+                                <span class="preco">R$ 399,99</span>
                             </div>
                             <div class="btProduto">
                                 <ul>
@@ -242,64 +231,66 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
+                        </div><!-- Final desc Produtos -->
+                    </div><!-- Final Produtos -->
 
-                    <div class="produto">
+
+                    <div class="produto"><!-- Inicio Produtos -->
                         <div class="imgProduto">
-                            <img src="./imagens/tabuaCarne.png" alt="Tabua de carne">
+                            <img src="./imagens/cadeiraCinza.png" alt="cadeira cinza">
                         </div>
 
-                        <div class="descricaoProduto">
-                            <div>
-                                <span class="descTextProduto">Tabua de carne</span>
-                                <span class="preco">R$ 99,99</span>
-                            </div>
-                            <div class="btProduto">
-                                <ul>
-                                    <li>
-                                        <ion-icon name="cart"></ion-icon>
-                                    </li>
-                                    <li>
-                                        <ion-icon name="heart-empty"></ion-icon>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="produto">
-                        <div class="imgProduto">
-                            <img src="./imagens/relogio.png" alt="Relógio antigo">
-                        </div>
-
-                        <div class="descricaoProduto">
-                            <div>
-                                <span class="descTextProduto">Relógio antigo</span>
-                                <span class="preco">R$ 799,99</span>
-                            </div>
-                            <div class="btProduto">
-                                <ul>
-                                    <li>
-                                        <ion-icon name="cart"></ion-icon>
-                                    </li>
-                                    <li>
-                                        <ion-icon name="heart-empty"></ion-icon>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gradeProdutos">
-                    <div class="produto">
-                        <div class="imgProduto">
-                            <img src="./imagens/aparelhoJantar.png" alt="Aparelho de Jantar">
-                        </div>
-
-                        <div class="descricaoProduto">
+                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
                             <div>
                                 <span class="descTextProduto">Aparelho de Jantar</span>
+                                <span class="preco">R$ 199,99</span>
+                            </div>
+                            <div class="btProduto">
+                                <ul>
+                                    <li>
+                                        <ion-icon name="cart"></ion-icon>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="heart-empty"></ion-icon>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- Final desc Produtos -->
+                    </div><!-- Final Produtos -->
+
+
+                    <div class="produto"><!-- Inicio Produtos -->
+                        <div class="imgProduto">
+                            <img src="./imagens/cadeiraGamerAzul.png" alt="Cadeira gamer">
+                        </div>
+
+                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                            <div>
+                                <span class="descTextProduto">Cadeira Gamer</span>
+                                <span class="preco">R$ 1299,99</span>
+                            </div>
+                            <div class="btProduto">
+                                <ul>
+                                    <li>
+                                        <ion-icon name="cart"></ion-icon>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="heart-empty"></ion-icon>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- Final desc Produtos -->
+                    </div><!-- Final Produtos -->
+
+
+                    <div class="produto"><!-- Inicio Produtos -->
+                        <div class="imgProduto">
+                            <img src="./imagens/jogoCamaBranco.png" alt="Jogo de cama">
+                        </div>
+
+                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                            <div>
+                                <span class="descTextProduto">Jogo de Cama</span>
                                 <span class="preco">R$ 299,99</span>
                             </div>
                             <div class="btProduto">
@@ -312,17 +303,42 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
+                        </div><!-- Final desc Produtos -->
+                    </div><!-- Final Produtos -->
 
-                    <div class="produto">
+
+                    <div class="produto"><!-- Inicio Produtos -->
                         <div class="imgProduto">
-                            <img src="./imagens/panelas.png" alt="Jogo de Panelas Inox">
+                            <img src="./imagens/panelas.png" alt="Panelas">
                         </div>
 
-                        <div class="descricaoProduto">
+                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
                             <div>
-                                <span class="descTextProduto">Jogo de Panelas Inox</span>
+                                <span class="descTextProduto">Jogo de Panelas</span>
+                                <span class="preco">R$ 599,99</span>
+                            </div>
+                            <div class="btProduto">
+                                <ul>
+                                    <li>
+                                        <ion-icon name="cart"></ion-icon>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="heart-empty"></ion-icon>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- Final desc Produtos -->
+                    </div><!-- Final Produtos -->
+
+
+                    <div class="produto"><!-- Inicio Produtos -->
+                        <div class="imgProduto">
+                            <img src="./imagens/poutrona.png" alt="poutrona cinza">
+                        </div>
+
+                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                            <div>
+                                <span class="descTextProduto">Poutrona</span>
                                 <span class="preco">R$ 499,99</span>
                             </div>
                             <div class="btProduto">
@@ -335,18 +351,18 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
+                        </div><!-- Final desc Produtos -->
+                    </div><!-- Final Produtos -->
 
-                    <div class="produto">
+                    <div class="produto"><!-- Inicio Produtos -->
                         <div class="imgProduto">
-                            <img src="./imagens/tabuaCarne.png" alt="Tabua de carne">
+                            <img src="./imagens/suculenta.png" alt="suculenta">
                         </div>
 
-                        <div class="descricaoProduto">
+                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
                             <div>
-                                <span class="descTextProduto">Tabua de carne</span>
-                                <span class="preco">R$ 99,99</span>
+                                <span class="descTextProduto">Suculenta</span>
+                                <span class="preco">R$ 49,99</span>
                             </div>
                             <div class="btProduto">
                                 <ul>
@@ -358,18 +374,18 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
+                        </div><!-- Final desc Produtos -->
+                    </div><!-- Final Produtos -->
 
-                    <div class="produto">
+                    <div class="produto"><!-- Inicio Produtos -->
                         <div class="imgProduto">
-                            <img src="./imagens/relogio.png" alt="Relógio antigo">
+                            <img src="./imagens/sofaAmarelo.png" alt="sofa amarelo">
                         </div>
 
-                        <div class="descricaoProduto">
+                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
                             <div>
-                                <span class="descTextProduto">Relógio antigo</span>
-                                <span class="preco">R$ 799,99</span>
+                                <span class="descTextProduto">Sofa Amarelo</span>
+                                <span class="preco">R$ 2999,99</span>
                             </div>
                             <div class="btProduto">
                                 <ul>
@@ -381,19 +397,18 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gradeProdutos">
-                    <div class="produto">
+                        </div><!-- Final desc Produtos -->
+                    </div><!-- Final Produtos -->
+
+                    <div class="produto"><!-- Inicio Produtos -->
                         <div class="imgProduto">
-                            <img src="./imagens/aparelhoJantar.png" alt="Aparelho de Jantar">
+                            <img src="./imagens/sofaCinza.png" alt="sofa cinza">
                         </div>
 
-                        <div class="descricaoProduto">
+                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
                             <div>
-                                <span class="descTextProduto">Aparelho de Jantar</span>
-                                <span class="preco">R$ 299,99</span>
+                                <span class="descTextProduto">Sofa Cinza</span>
+                                <span class="preco">R$ 3549,99</span>
                             </div>
                             <div class="btProduto">
                                 <ul>
@@ -405,18 +420,18 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
+                        </div><!-- Final desc Produtos -->
+                    </div><!-- Final Produtos -->
 
-                    <div class="produto">
+                    <div class="produto"><!-- Inicio Produtos -->
                         <div class="imgProduto">
-                            <img src="./imagens/panelas.png" alt="Jogo de Panelas Inox">
+                            <img src="./imagens/suporteBarbosa.png" alt="suporte plantas">
                         </div>
 
-                        <div class="descricaoProduto">
+                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
                             <div>
-                                <span class="descTextProduto">Jogo de Panelas Inox</span>
-                                <span class="preco">R$ 499,99</span>
+                                <span class="descTextProduto">Suporte para plantas</span>
+                                <span class="preco">R$ 49,99</span>
                             </div>
                             <div class="btProduto">
                                 <ul>
@@ -428,18 +443,18 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
+                        </div><!-- Final desc Produtos -->
+                    </div><!-- Final Produtos -->
 
-                    <div class="produto">
+                    <div class="produto"><!-- Inicio Produtos -->
                         <div class="imgProduto">
-                            <img src="./imagens/tabuaCarne.png" alt="Tabua de carne">
+                            <img src="./imagens/rackCinza.png" alt="rack cinza">
                         </div>
 
-                        <div class="descricaoProduto">
+                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
                             <div>
-                                <span class="descTextProduto">Tabua de carne</span>
-                                <span class="preco">R$ 99,99</span>
+                                <span class="descTextProduto">Rack</span>
+                                <span class="preco">R$ 649,99</span>
                             </div>
                             <div class="btProduto">
                                 <ul>
@@ -451,18 +466,17 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="produto">
+                        </div><!-- Final desc Produtos -->
+                    </div><!-- Final Produtos -->
+                    <div class="produto"><!-- Inicio Produtos -->
                         <div class="imgProduto">
-                            <img src="./imagens/relogio.png" alt="Relógio antigo">
+                            <img src="./imagens/poutronaAmarela.png" alt="poutrona Amarela">
                         </div>
 
-                        <div class="descricaoProduto">
+                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
                             <div>
-                                <span class="descTextProduto">Relógio antigo</span>
-                                <span class="preco">R$ 799,99</span>
+                                <span class="descTextProduto">Poutrona Amarela</span>
+                                <span class="preco">R$ 549,99</span>
                             </div>
                             <div class="btProduto">
                                 <ul>
@@ -474,9 +488,82 @@
                                     </li>
                                 </ul>
                             </div>
+                        </div><!-- Final desc Produtos -->
+                    </div><!-- Final Produtos -->
+                    <div class="produto"><!-- Inicio Produtos -->
+                        <div class="imgProduto">
+                            <img src="./imagens/ambienteCinzaAmadeirado.png" alt="sala completa">
                         </div>
-                    </div>
-                </div>
+
+                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                            <div>
+                                <span class="descTextProduto">Conjunto moveis</span>
+                                <span class="preco">R$ 8949,99</span>
+                            </div>
+                            <div class="btProduto">
+                                <ul>
+                                    <li>
+                                        <ion-icon name="cart"></ion-icon>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="heart-empty"></ion-icon>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- Final desc Produtos -->
+                    </div><!-- Final Produtos -->
+                    <div class="produto"><!-- Inicio Produtos -->
+                        <div class="imgProduto">
+                            <img src="./imagens/sofaListradoBrPr.png" alt="sofa listrado">
+                        </div>
+
+                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                            <div>
+                                <span class="descTextProduto">Sofa Listrado</span>
+                                <span class="preco">R$ 3249,99</span>
+                            </div>
+                            <div class="btProduto">
+                                <ul>
+                                    <li>
+                                        <ion-icon name="cart"></ion-icon>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="heart-empty"></ion-icon>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- Final desc Produtos -->
+                    </div><!-- Final Produtos -->
+                    <div class="produto"><!-- Inicio Produtos -->
+                        <div class="imgProduto">
+                            <img src="./imagens/lampadasFilamento.png" alt="lampadas Filamento">
+                        </div>
+
+                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                            <div>
+                                <span class="descTextProduto">Lampadas retro</span>
+                                <span class="preco">R$ 149,99</span>
+                            </div>
+                            <div class="btProduto">
+                                <ul>
+                                    <li>
+                                        <ion-icon name="cart"></ion-icon>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="heart-empty"></ion-icon>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- Final desc Produtos -->
+                    </div><!-- Final Produtos -->
+
+
+                </div><!-- final Grade Produtos -->
+                
+                
+
+                
+               
             </section>
             <section class="conceitoDesign">
                 <h1 class="titulo">Conceitos</h1>
@@ -485,12 +572,12 @@
                 <div class="gradeConceitos">
                     <div class="conceito">
                         <div class="imgConceito">
-                            <img src="./conceito/ricardo-avelar-7e9d1pWES9g-unsplash.jpg" alt="">
+                            <img src="./conceito/francesca-tosolini-hCU4fimRW-c-unsplash.jpg" alt="">
                         </div>
                         <div class="atribuicao">
                             <span>Photo by </span>
-                            <a href="https://unsplash.com/@ahmedamir?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                                target="blank">Ahmed Amir</a>
+                            <a href="https://unsplash.com/@fromitaly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                                target="blank">Francesca Tosolini</a>
                             <span>On</span>
                             <a href="https://unsplash.com/s/photos/home-interior?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                                 target="blank">Unsplash</a>
@@ -499,14 +586,14 @@
 
                     <div class="conceito">
                         <div class="imgConceito">
-                            <img src="./conceito/ricardo-avelar-7e9d1pWES9g-unsplash.jpg" alt="">
+                            <img src="./conceito/lissete-laverde-S9WzYYBxL-E-unsplash.jpg" alt="">
                         </div>
                         <div class="atribuicao">
                             <span>Photo by </span>
-                            <a href="https://unsplash.com/@ahmedamir?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                                target="blank">Ahmed Amir</a>
+                            <a href="https://unsplash.com/@lissetelaverdephoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                                target="blank">Lissete Laverde</a>
                             <span>On</span>
-                            <a href="https://unsplash.com/s/photos/home-interior?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                            <a href="https://unsplash.com/t/interiors?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                                 target="blank">Unsplash</a>
                         </div>
                     </div>
@@ -517,48 +604,48 @@
                         </div>
                         <div class="atribuicao">
                             <span>Photo by </span>
-                            <a href="https://unsplash.com/@ahmedamir?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                                target="blank">Ahmed Amir</a>
+                            <a href="https://unsplash.com/@ricardodeavelar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                                target="blank">Ricardo Avelar</a>
                             <span>On</span>
-                            <a href="https://unsplash.com/s/photos/home-interior?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                            <a href="https://unsplash.com/t/interiors?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                                 target="blank">Unsplash</a>
                         </div>                      
                     </div>
 
                     <div class="conceito">
                         <div class="imgConceito">
-                            <img src="./conceito/ricardo-avelar-7e9d1pWES9g-unsplash.jpg" alt="">
+                            <img src="./conceito/lissete-laverde-7jOeRc0dOWs-unsplash.jpg" alt="">
                         </div>
                         <div class="atribuicao">
                             <span>Photo by </span>
-                            <a href="https://unsplash.com/@ahmedamir?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                                target="blank">Ahmed Amir</a>
+                            <a href="https://unsplash.com/@lissetelaverdephoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                                target="blank">Lissete Laverde</a>
                             <span>On</span>
-                            <a href="https://unsplash.com/s/photos/home-interior?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                            <a href="https://unsplash.com/t/interiors?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                                 target="blank">Unsplash</a>
                         </div>         
                     </div>
                     <div class="conceito">
                         <div class="imgConceito">
-                            <img src="./conceito/ricardo-avelar-7e9d1pWES9g-unsplash.jpg" alt="">
+                            <img src="./conceito/roberto-nickson-tleCJiDOri0-unsplash.jpg" alt="">
                         </div>
                         <div class="atribuicao">
                             <span>Photo by </span>
-                            <a href="https://unsplash.com/@ahmedamir?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                                target="blank">Ahmed Amir</a>
+                            <a href="https://unsplash.com/@rpnickson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                                target="blank">Roberto Nickson</a>
                             <span>On</span>
-                            <a href="https://unsplash.com/s/photos/home-interior?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                            <a href="https://unsplash.com/s/photos/interior-design?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                                 target="blank">Unsplash</a>
                         </div>         
                     </div>
                     <div class="conceito">
                         <div class="imgConceito">
-                            <img src="./conceito/ricardo-avelar-7e9d1pWES9g-unsplash.jpg" alt="">
+                            <img src="./conceito/spacejoy-RqO6kwm4tZY-unsplash.jpg" alt="">
                         </div>
                         <div class="atribuicao">
                             <span>Photo by </span>
-                            <a href="https://unsplash.com/@ahmedamir?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                                target="blank">Ahmed Amir</a>
+                            <a href="https://unsplash.com/@spacejoy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                                target="blank">Spacejoy</a>
                             <span>On</span>
                             <a href="https://unsplash.com/s/photos/home-interior?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                                 target="blank">Unsplash</a>
@@ -594,27 +681,6 @@
 
                 </div>
             </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
 
         <script src="./menuBar/mobileNavBar.js"></script>
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>

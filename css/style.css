@@ -2,40 +2,39 @@
     margin: 0;
     padding: 0;
 }
-/*                  Slider                          */
-.slider{
-    background: rgb(197, 197, 197);
+body{
+    
     width: 100%;
-    height: 92vh;
-    display: flex;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+/*                  Slider                          */
+.banner{
+    max-width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
-    position: relative;
-}
-.sliderContainer{
-    
-    width: 1000px;
-    height: 80vh;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+}
+.imgFundo{
+    width: 100%;
+    height: 115vh;
+    
+}
+.imgFundo img{
+    width: 100%;
+    height: 100%;
+    margin-top: -40px;
+    object-fit: cover;
+}
+.imgLogo{
+    color: white;
     position: absolute;
-    top: 0;
-}
-.sliderText{
-    padding: 20px;
-    max-width: 400px;
-}
-.sliderText h1{
-    font-size: 35px;
-    margin: 10px;
-    text-align: center;
-}
-.sliderText p{
-    padding: 20px;
-    font-size: 20px;
-    text-align: justify;
-
+    max-width: 90%;
+    margin: 0 auto;
+    z-index: 1;
 }
 .btComprar{
     width: 200px;
@@ -58,35 +57,34 @@
     margin: 10px auto;
     padding-bottom: 50px;
     position: relative;
+    
 }
 /*                  exemplos                          */
 .exemplos{
     border-radius: 20px 20px 0 0 ;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 20px;
-    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
     position: relative;
-    top: -120px;
-    left: 0;
-    background-color: #fff;
+    top: -100px;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
 }
 .imagemExemplo{
     background: rgb(167, 167, 167);
-    max-width: 100%;
-    height: 250px;
-    overflow: hidden;
+    width:290px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    
+    border-radius: 20px;
+    margin: 10px 0 10px 0; 
 }
 .imagemExemplo img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
+    height: 100%;   
 }
 .imagemExemplo a{
     position: absolute;
@@ -101,16 +99,15 @@
 
 a:hover{
     opacity: 0.7;
-    
 }
 
 /*                  Produtos em Alta                */
 
 .gradeProdutos{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .titulo{
     text-align: center;
@@ -121,49 +118,53 @@ a:hover{
 .linha{
     width: 130px;
     height: 4px;
-    margin: 0 auto;
+    margin: 20px auto;
     background: black;
     position: relative;
     top: -50px;
 }
 .produto{
-    max-width: 100%;
-    min-height: 380px;
-    padding: 10px;
-    box-shadow: 0 0 20px rgb(231, 231, 231);
+    max-width: 290px;
+    min-height: 200px;
     border-radius: 10px; 
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     margin-top: 30px;
+    overflow: hidden;
+    
     
 }
 .produto:hover{
-    border: 2px solid rgb(75, 75, 75);
-    box-shadow: 0 0 20px black;
+    border: 1px solid rgb(75, 75, 75);
 }
 .imgProduto{
     width: 100%;
-    min-height: 300px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: rgb(228, 228, 228); 
+    overflow: hidden;
+    
 }
 .produto img{
     width: 100%;
-    object-fit:contain;
+    object-fit:cover;
 }
 .descricaoProduto{
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin-top: 30px;
+    text-align: center;
+    background: rgb(228, 228, 228);
 }
 .descTextProduto{
     display: block;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 800;
-    margin-bottom: 10px;
+    margin: 5px;
+    
 }
 .preco{
     display: block;
@@ -197,10 +198,13 @@ a:hover{
 .ofertaDia{
     margin-top:150px ;
     width: 100%;
-    height: 30vh;
+    min-height: 30vh;
     background: rgb(228, 228, 228);
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
     position: relative;
 }
 .descOfertaDia{
@@ -224,7 +228,7 @@ a:hover{
     position: relative;
     top: -100px;
     right: 0;
-    width: 100%;
+    max-width:500px;
 }
 .imgOfertaDia img{
     width: 100%;
@@ -269,11 +273,14 @@ a:hover{
 }
 .imgConceito{
     width: 100%;
+    max-height: 300px;
     border-radius: 20px 20px 0 0;
     overflow: hidden;
 }
 .imgConceito img{
     width: 100%;
+    
+    
 }
 
 .atribuicao{
@@ -357,85 +364,37 @@ footer{
 }
 
 @media (max-width:999px){
-    .sliderContainer{
-        flex-direction: column;
-    }
-    .sliderText{
-        position: absolute;
-        background: rgba(167, 167, 167, 0.425);
-        max-width: 300px;
-    }
-    .exemplos{
-        grid-template-columns: repeat(2,1fr);  
-    }
-    .imagemExemplo a{
-        position: absolute;
-        bottom: 0;
-        opacity: 0.7;
-    }
-    .gradeProdutos{
-        grid-template-columns: repeat(2,1fr);
-    }
-    .descricaoProduto{
-        grid-template-columns:1fr;
-        text-align: center;
-    }
-    .ofertaDia{
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        flex-direction: column;
-        min-height: 50vh;
-        padding: 10px;
-    }
     .imgOfertaDia{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         max-width: 500px;
         top: -10px;
     }
-    .imgOfertaDia img{
-        max-width: 100%;
-    }
-    .descOfertaDia{
-        display: block;
-        top: 0;
-    }
-    .descOfertaDia h1{
-        font-size: 30px;
-        margin-top: 30px;
-    }
-    .ofertaDia.of2{
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        flex-direction: column;
-        min-height: 50vh;
-        padding: 10px;
-    }
     .ofertaDia.of2 .imgOfertaDia{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         max-width: 500px;
         top: 30px;
-    }
-    .ofertaDia.of2 .descOfertaDia{
-        top: -20px;
     }
     .imgOfertaDia .linha{
         display: none;
     }
     
+    
 }
 
-@media (max-width:350px){
+@media (max-width:600px){
     .descOfertaDia h1{
-        font-size: 20px;
+        font-size: 30px;
         
+    }
+    .produto{
+        max-width: 90%;
+        min-height: 200px;
+    }
+    .imagemExemplo{
+        width:100%;
+        height: auto;
+        
+    }
+    .titulo{
+        font-size: 40px;
     }
     
 }
