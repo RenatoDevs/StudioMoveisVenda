@@ -5,61 +5,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--                CSS da Pagina               -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./logos/sm.png" type="image/png">
+    <!--                CSS do Menu                 -->
     <link rel="stylesheet" href="./menuBar/mobileNavBarStyle.css">
+    <!--                Script do ion-con           -->
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <!--                Swiper                      -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/swipeStyle.css" />
+    <!--                Imagem do barra do navegador-->
+    <link rel="icon" href="./logos/sm.png" type="image/png">
     <title>studioMoveisVendas</title>
 </head>
 
 <body>
-    <nav>
-        <a href="#" class="logo"><img src="./logos/studioLogoBranco.png" alt=""></a>
-        <div class="mobileMenu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
+    <header>
+        <nav>
+            <img class="logo" src="./logos/studioLogoBranco.png" alt="">
+            <div class="mobileMenu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
 
-        <ul class="navList">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#sb">Sobre</a></li>
-            <li><a href="#ap">Apresentação</a></li>
-            <li><a href="#gl">Galeria</a></li>
-            
-            
+            <ul class="navList">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#sb">Sobre</a></li>
+                <li><a href="#ap">Apresentação</a></li>
+                <li><a href="#gl">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="slider">
+            <div class="swiper topSlider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="banner">
+                            <div class="imgFundo">
+                                <img src="./imagens/ambientes/ambienteCinzaAmadeirado.png">
+                            </div>
+                            <img class="imgLogo" src="logos/studioLogoBranco.png">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner teste2">
+                            <div class="imgFundo">
+                                <img src="./imagens/ambientes/ambienteCinzaAmadeiradoEscuro.png">
+                            </div>
+                            <img class="imgLogo" src="logos/studioLogoBranco.png">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner">
+                            <div class="imgFundo">
+                                <img src="./imagens/ambientes/ambienteBege.png">
+                            </div>
+                            <img class="imgLogo" src="logos/studioLogoBranco.png">
+                        </div>
+                    </div>
 
-        </ul>
-    </nav>
-   <main>
-    <section class="banner">
-        <div class="imgFundo">
-            <img src="./conceito/lissete-laverde-7jOeRc0dOWs-unsplash.jpg">
-        </div>
-        <img class="imgLogo" src="logos/studioLogoBranco.png">
-        
-    </section>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
         <section class="container">
             <section class="exemplos">
                 <div class="imagemExemplo">
                     <img src="./imagens/poutrona.png" alt="poutrona cinza">
-                    <a href="#">Poutronas Confortaveis</a>
                 </div>
                 <div class="imagemExemplo">
                     <img src="./imagens/cadeiraCinza.png" alt="cadeira cinza">
-                    <a href="#">Cadeiras Confortaveis</a>
                 </div>
                 <div class="imagemExemplo">
                     <img src="./imagens/lampadasFilamento.png" alt="Lampadas de Filamento">
-                    <a href="#">Luminarias Incríveis</a>
                 </div>
                 <diV class="imagemExemplo">
                     <img src="./imagens/almofadasBege.png" alt="almofadas">
-                    <a href="#">Lindas Almofadas</a>
                 </diV>
             </section>
-           <section>
-                <h1 class="titulo">Produtos em Alta</h1>
-                <div class="linha"></div>
+            <section>
+                <div class="titulos">
+                    <h1 class="titulo">Produtos em Alta</h1>
+                    <div class="linha"></div>
+                </div>
+
                 <div class="gradeProdutos">
                     <div class="produto">
                         <div class="imgProduto">
@@ -155,45 +187,94 @@
                 </div>
             </section>
 
-            <section class="ofertaDia">
-                <div class="descOfertaDia">
-                    <h1>Sofá Maravilhoso</h1>
-                    <span class="preco">R$ 2999,99</span>
-                    <span class="descTextProduto">Sofá grande e confortavel</span>
-                    <a class="btComprar" href="#"><span>ShopNow</span></a>
+            <div class="swiper sliderOfDia">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="ofertaDia">
+                            <div class="descOfertaDia">
+                                <h1>Sofá Maravilhoso</h1>
+                                <span class="preco">R$ 2999,99</span>
+                                <span class="descTextProduto">Sofá grande e confortavel</span>
+                                <a class="btComprar" href="#"><span>ShopNow</span></a>
+                            </div>
+                            <div class="imgOfertaDia">
+                                <img src="./imagens/sofaColorido.png" alt="Sofá Listrado">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ofertaDia">
+                            <div class="descOfertaDia">
+                                <h1>Sofá Listrado Maravilhoso</h1>
+                                <span class="preco">R$ 2999,99</span>
+                                <span class="descTextProduto">Sofá grande e confortavel</span>
+                                <a class="btComprar" href="#"><span>ShopNow</span></a>
+                            </div>
+                            <div class="imgOfertaDia">
+                                <img src="./imagens/sofaListradoBrPr.png" alt="Sofá Listrado">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ofertaDia">
+                            <div class="descOfertaDia">
+                                <h1>Sofá Maravilhoso</h1>
+                                <span class="preco">R$ 2999,99</span>
+                                <span class="descTextProduto">Sofá grande e confortavel</span>
+                                <a class="btComprar" href="#"><span>ShopNow</span></a>
+                            </div>
+                            <div class="imgOfertaDia">
+                                <img src="./imagens/sofaAmarelo.png" alt="Sofá Listrado">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ofertaDia">
+                            <div class="descOfertaDia">
+                                <h1>Lindo Ambiente</h1>
+                                <span class="preco">R$ 7999,99</span>
+                                <span class="descTextProduto">Sofá grande e confortavel</span>
+                                <a class="btComprar" href="#"><span>ShopNow</span></a>
+                            </div>
+                            <div class="imgOfertaDia">
+                                <img src="./imagens/kitSofaCinza.png" alt="Sofá Listrado">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ofertaDia">
+                            <div class="descOfertaDia">
+                                <h1>Sofá Maravilhoso</h1>
+                                <span class="preco">R$ 2999,99</span>
+                                <span class="descTextProduto">Sofá grande e confortavel</span>
+                                <a class="btComprar" href="#"><span>ShopNow</span></a>
+                            </div>
+                            <div class="imgOfertaDia">
+                                <img src="./imagens/sofaCinza.png" alt="Sofá Listrado">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="imgOfertaDia">
-                    <img src="./imagens/sofaListradoBrPr.png" alt="Sofá Listrado">
-                    <div class="linha"></div>
-                </div>
-            </section>
-            
-            <section class="ofertaDia of2 ">
-                <div class="imgOfertaDia">
-                    <img src="./imagens/sofaAmarelo.png" alt="Sofá Listrado">
-                    <div class="linha"></div>
-                </div>
-                <div class="descOfertaDia">
-                    <h1>Sofá Maravilhoso</h1>
-                    <span class="preco">R$ 2999,99</span>
-                    <span class="descTextProduto">Sofá grande e confortavel</span>
-                    <a class="btComprar" href="#"><span>ShopNow</span></a>
-                </div>
-            </section>
-
+                <div class="swiper-pagination"></div>
+            </div>
 
             <section>
-                <h1 class="titulo">Produtos</h1>
-                <div class="linha"></div>
+                <div class="titulos">
+                    <h1 class="titulo">Produtos</h1>
+                    <div class="linha"></div>
+                </div>
 
-                <div class="gradeProdutos"> <!-- Inicio Grade Produtos -->
+                <div class="gradeProdutos">
+                    <!-- Inicio Grade Produtos -->
 
-                    <div class="produto"><!-- Inicio Produtos -->
+                    <div class="produto">
+                        <!-- Inicio Produtos -->
                         <div class="imgProduto">
                             <img src="./imagens/aparelhoJantar.png" alt="Aparelho de Jantar">
                         </div>
 
-                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                        <div class="descricaoProduto">
+                            <!-- Inicio desc Produtos -->
                             <div>
                                 <span class="descTextProduto">Aparelho de Jantar</span>
                                 <span class="preco">R$ 299,99</span>
@@ -211,12 +292,14 @@
                         </div><!-- Final desc Produtos -->
                     </div><!-- Final Produtos -->
 
-                    <div class="produto"><!-- Inicio Produtos -->
+                    <div class="produto">
+                        <!-- Inicio Produtos -->
                         <div class="imgProduto">
                             <img src="./imagens/cadeiraBege.png" alt="Cadeira bege">
                         </div>
 
-                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                        <div class="descricaoProduto">
+                            <!-- Inicio desc Produtos -->
                             <div>
                                 <span class="descTextProduto">Cadeira </span>
                                 <span class="preco">R$ 399,99</span>
@@ -235,12 +318,14 @@
                     </div><!-- Final Produtos -->
 
 
-                    <div class="produto"><!-- Inicio Produtos -->
+                    <div class="produto">
+                        <!-- Inicio Produtos -->
                         <div class="imgProduto">
                             <img src="./imagens/cadeiraCinza.png" alt="cadeira cinza">
                         </div>
 
-                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                        <div class="descricaoProduto">
+                            <!-- Inicio desc Produtos -->
                             <div>
                                 <span class="descTextProduto">Aparelho de Jantar</span>
                                 <span class="preco">R$ 199,99</span>
@@ -259,12 +344,14 @@
                     </div><!-- Final Produtos -->
 
 
-                    <div class="produto"><!-- Inicio Produtos -->
+                    <div class="produto">
+                        <!-- Inicio Produtos -->
                         <div class="imgProduto">
                             <img src="./imagens/cadeiraGamerAzul.png" alt="Cadeira gamer">
                         </div>
 
-                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                        <div class="descricaoProduto">
+                            <!-- Inicio desc Produtos -->
                             <div>
                                 <span class="descTextProduto">Cadeira Gamer</span>
                                 <span class="preco">R$ 1299,99</span>
@@ -283,12 +370,14 @@
                     </div><!-- Final Produtos -->
 
 
-                    <div class="produto"><!-- Inicio Produtos -->
+                    <div class="produto">
+                        <!-- Inicio Produtos -->
                         <div class="imgProduto">
                             <img src="./imagens/jogoCamaBranco.png" alt="Jogo de cama">
                         </div>
 
-                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                        <div class="descricaoProduto">
+                            <!-- Inicio desc Produtos -->
                             <div>
                                 <span class="descTextProduto">Jogo de Cama</span>
                                 <span class="preco">R$ 299,99</span>
@@ -307,12 +396,14 @@
                     </div><!-- Final Produtos -->
 
 
-                    <div class="produto"><!-- Inicio Produtos -->
+                    <div class="produto">
+                        <!-- Inicio Produtos -->
                         <div class="imgProduto">
                             <img src="./imagens/panelas.png" alt="Panelas">
                         </div>
 
-                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                        <div class="descricaoProduto">
+                            <!-- Inicio desc Produtos -->
                             <div>
                                 <span class="descTextProduto">Jogo de Panelas</span>
                                 <span class="preco">R$ 599,99</span>
@@ -331,12 +422,14 @@
                     </div><!-- Final Produtos -->
 
 
-                    <div class="produto"><!-- Inicio Produtos -->
+                    <div class="produto">
+                        <!-- Inicio Produtos -->
                         <div class="imgProduto">
                             <img src="./imagens/poutrona.png" alt="poutrona cinza">
                         </div>
 
-                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                        <div class="descricaoProduto">
+                            <!-- Inicio desc Produtos -->
                             <div>
                                 <span class="descTextProduto">Poutrona</span>
                                 <span class="preco">R$ 499,99</span>
@@ -354,12 +447,14 @@
                         </div><!-- Final desc Produtos -->
                     </div><!-- Final Produtos -->
 
-                    <div class="produto"><!-- Inicio Produtos -->
+                    <div class="produto">
+                        <!-- Inicio Produtos -->
                         <div class="imgProduto">
                             <img src="./imagens/suculenta.png" alt="suculenta">
                         </div>
 
-                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                        <div class="descricaoProduto">
+                            <!-- Inicio desc Produtos -->
                             <div>
                                 <span class="descTextProduto">Suculenta</span>
                                 <span class="preco">R$ 49,99</span>
@@ -377,12 +472,14 @@
                         </div><!-- Final desc Produtos -->
                     </div><!-- Final Produtos -->
 
-                    <div class="produto"><!-- Inicio Produtos -->
+                    <div class="produto">
+                        <!-- Inicio Produtos -->
                         <div class="imgProduto">
                             <img src="./imagens/sofaAmarelo.png" alt="sofa amarelo">
                         </div>
 
-                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                        <div class="descricaoProduto">
+                            <!-- Inicio desc Produtos -->
                             <div>
                                 <span class="descTextProduto">Sofa Amarelo</span>
                                 <span class="preco">R$ 2999,99</span>
@@ -400,12 +497,14 @@
                         </div><!-- Final desc Produtos -->
                     </div><!-- Final Produtos -->
 
-                    <div class="produto"><!-- Inicio Produtos -->
+                    <div class="produto">
+                        <!-- Inicio Produtos -->
                         <div class="imgProduto">
                             <img src="./imagens/sofaCinza.png" alt="sofa cinza">
                         </div>
 
-                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                        <div class="descricaoProduto">
+                            <!-- Inicio desc Produtos -->
                             <div>
                                 <span class="descTextProduto">Sofa Cinza</span>
                                 <span class="preco">R$ 3549,99</span>
@@ -423,12 +522,14 @@
                         </div><!-- Final desc Produtos -->
                     </div><!-- Final Produtos -->
 
-                    <div class="produto"><!-- Inicio Produtos -->
+                    <div class="produto">
+                        <!-- Inicio Produtos -->
                         <div class="imgProduto">
                             <img src="./imagens/suporteBarbosa.png" alt="suporte plantas">
                         </div>
 
-                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                        <div class="descricaoProduto">
+                            <!-- Inicio desc Produtos -->
                             <div>
                                 <span class="descTextProduto">Suporte para plantas</span>
                                 <span class="preco">R$ 49,99</span>
@@ -446,12 +547,14 @@
                         </div><!-- Final desc Produtos -->
                     </div><!-- Final Produtos -->
 
-                    <div class="produto"><!-- Inicio Produtos -->
+                    <div class="produto">
+                        <!-- Inicio Produtos -->
                         <div class="imgProduto">
                             <img src="./imagens/rackCinza.png" alt="rack cinza">
                         </div>
 
-                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                        <div class="descricaoProduto">
+                            <!-- Inicio desc Produtos -->
                             <div>
                                 <span class="descTextProduto">Rack</span>
                                 <span class="preco">R$ 649,99</span>
@@ -468,12 +571,14 @@
                             </div>
                         </div><!-- Final desc Produtos -->
                     </div><!-- Final Produtos -->
-                    <div class="produto"><!-- Inicio Produtos -->
+                    <div class="produto">
+                        <!-- Inicio Produtos -->
                         <div class="imgProduto">
                             <img src="./imagens/poutronaAmarela.png" alt="poutrona Amarela">
                         </div>
 
-                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                        <div class="descricaoProduto">
+                            <!-- Inicio desc Produtos -->
                             <div>
                                 <span class="descTextProduto">Poutrona Amarela</span>
                                 <span class="preco">R$ 549,99</span>
@@ -490,15 +595,17 @@
                             </div>
                         </div><!-- Final desc Produtos -->
                     </div><!-- Final Produtos -->
-                    <div class="produto"><!-- Inicio Produtos -->
+                    <div class="produto">
+                        <!-- Inicio Produtos -->
                         <div class="imgProduto">
-                            <img src="./imagens/ambienteCinzaAmadeirado.png" alt="sala completa">
+                            <img src="./imagens/poltronaFibra.png" alt="sala completa">
                         </div>
 
-                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                        <div class="descricaoProduto">
+                            <!-- Inicio desc Produtos -->
                             <div>
-                                <span class="descTextProduto">Conjunto moveis</span>
-                                <span class="preco">R$ 8949,99</span>
+                                <span class="descTextProduto">Poltrona de fibra</span>
+                                <span class="preco">R$ 649,99</span>
                             </div>
                             <div class="btProduto">
                                 <ul>
@@ -512,12 +619,14 @@
                             </div>
                         </div><!-- Final desc Produtos -->
                     </div><!-- Final Produtos -->
-                    <div class="produto"><!-- Inicio Produtos -->
+                    <div class="produto">
+                        <!-- Inicio Produtos -->
                         <div class="imgProduto">
                             <img src="./imagens/sofaListradoBrPr.png" alt="sofa listrado">
                         </div>
 
-                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                        <div class="descricaoProduto">
+                            <!-- Inicio desc Produtos -->
                             <div>
                                 <span class="descTextProduto">Sofa Listrado</span>
                                 <span class="preco">R$ 3249,99</span>
@@ -534,12 +643,14 @@
                             </div>
                         </div><!-- Final desc Produtos -->
                     </div><!-- Final Produtos -->
-                    <div class="produto"><!-- Inicio Produtos -->
+                    <div class="produto">
+                        <!-- Inicio Produtos -->
                         <div class="imgProduto">
                             <img src="./imagens/lampadasFilamento.png" alt="lampadas Filamento">
                         </div>
 
-                        <div class="descricaoProduto"><!-- Inicio desc Produtos -->
+                        <div class="descricaoProduto">
+                            <!-- Inicio desc Produtos -->
                             <div>
                                 <span class="descTextProduto">Lampadas retro</span>
                                 <span class="preco">R$ 149,99</span>
@@ -559,15 +670,17 @@
 
 
                 </div><!-- final Grade Produtos -->
-                
-                
 
-                
-               
+
+
+
+
             </section>
             <section class="conceitoDesign">
-                <h1 class="titulo">Conceitos</h1>
-                <div class="linha"></div>
+                <div class="titulos">
+                    <h1 class="titulo">Conceito</h1>
+                    <div class="linha"></div>
+                </div>
 
                 <div class="gradeConceitos">
                     <div class="conceito">
@@ -581,7 +694,7 @@
                             <span>On</span>
                             <a href="https://unsplash.com/s/photos/home-interior?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                                 target="blank">Unsplash</a>
-                        </div>                       
+                        </div>
                     </div>
 
                     <div class="conceito">
@@ -597,7 +710,7 @@
                                 target="blank">Unsplash</a>
                         </div>
                     </div>
-                
+
                     <div class="conceito">
                         <div class="imgConceito">
                             <img src="./conceito/ricardo-avelar-7e9d1pWES9g-unsplash.jpg" alt="">
@@ -609,7 +722,7 @@
                             <span>On</span>
                             <a href="https://unsplash.com/t/interiors?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                                 target="blank">Unsplash</a>
-                        </div>                      
+                        </div>
                     </div>
 
                     <div class="conceito">
@@ -623,7 +736,7 @@
                             <span>On</span>
                             <a href="https://unsplash.com/t/interiors?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                                 target="blank">Unsplash</a>
-                        </div>         
+                        </div>
                     </div>
                     <div class="conceito">
                         <div class="imgConceito">
@@ -636,7 +749,7 @@
                             <span>On</span>
                             <a href="https://unsplash.com/s/photos/interior-design?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                                 target="blank">Unsplash</a>
-                        </div>         
+                        </div>
                     </div>
                     <div class="conceito">
                         <div class="imgConceito">
@@ -649,41 +762,63 @@
                             <span>On</span>
                             <a href="https://unsplash.com/s/photos/home-interior?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                                 target="blank">Unsplash</a>
-                        </div>         
+                        </div>
                     </div>
                 </div>
-                
             </section>
         </section>
-            <footer>
+        <footer>
+            <img class="fundo" src="./imagens/ambientes/chao.png" alt="">
+            <div id="ct" class="contato">
+                <h1>StudioMoveis</h1>
+                <h2>Visite nossas Redes sociais</h2>
+                <ul class="sci">
+                    <li><a href="#">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".topSlider", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                effect: "fade",
+                autoplay: {
+                    delay: 2700,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
 
-
-                <div id="ct" class="contato">
-                    <h1>StudioMoveis</h1>
-                    <h2>Visite nossas Redes sociais</h2>
-                    <ul>
-                        <a href="#">
-                            <span class="icon">
-                                <ion-icon name="logo-facebook"></ion-icon>
-                            </span>
-                        </a>
-                        <a href="#">
-                            <span class="icon">
-                                <ion-icon name="logo-instagram"></ion-icon>
-                            </span>
-                        </a>
-                        <a href="#">
-                            <span class="icon">
-                                <ion-icon name="logo-youtube"></ion-icon>
-                            </span>
-                        </a>
-                    </ul>
-
-                </div>
-            </footer>
-
+            var swiper = new Swiper(".sliderOfDia", {
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                autoplay: {
+                    delay: 2700,
+                    disableOnInteraction: false,
+                },
+                effect:"cube",
+                loop: "true"
+            });
+        </script>
         <script src="./menuBar/mobileNavBar.js"></script>
-        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     </main>
 
 

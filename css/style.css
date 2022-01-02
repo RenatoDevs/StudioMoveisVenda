@@ -1,26 +1,35 @@
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
-    
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
+    position: relative;
 }
 /*                  Slider                          */
+.slider{
+    width: 100%;
+    height: 100vh;
+}
 .banner{
-    max-width: 100%;
+    width: 100%;
     height: 100vh;
     margin: 0 auto;
     overflow: hidden;
     justify-content: center;
     align-items: center;
     display: flex;
+    z-index: 1;
 }
+
 .imgFundo{
     width: 100%;
     height: 115vh;
+    z-index: 1;
     
 }
 .imgFundo img{
@@ -29,13 +38,15 @@ body{
     margin-top: -40px;
     object-fit: cover;
 }
-.imgLogo{
+.swiper-slide .banner .imgLogo{
     color: white;
     position: absolute;
-    max-width: 90%;
+    top: 150px;
+    max-width: 900px;
     margin: 0 auto;
     z-index: 1;
 }
+
 .btComprar{
     width: 200px;
     height: 40px;
@@ -54,51 +65,39 @@ body{
 .container{
     max-width: 1200px;
     min-height: 100vh;
-    margin: 10px auto;
-    padding-bottom: 50px;
+    margin: 0 auto;
+    padding: 10px;
     position: relative;
-    
+    background: #eee;
 }
 /*                  exemplos                          */
 .exemplos{
-    border-radius: 20px 20px 0 0 ;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    top: -100px;
-    background: #fff;
-    padding: 5px;
+    background: #eee;
+    padding: 10px;
     overflow: hidden;
 }
 .imagemExemplo{
-    background: rgb(167, 167, 167);
-    width:290px;
-    height: 300px;
+    background: rgba(0,0,0,0.07);
+    width:280px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
     margin: 10px 0 10px 0; 
 }
 .imagemExemplo img{
     width: 100%;
-    height: 100%;   
-}
-.imagemExemplo a{
-    position: absolute;
-    background: rgb(197, 197, 197);
-    border: 1px solid black;
-    color: black;
-    padding: 10px;
-    font-weight: 900;
-    text-decoration: none;
-    transition: 0.3s;
+    height: 100%;
+    object-fit: cover;   
 }
 
 a:hover{
-    opacity: 0.7;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.6);
 }
 
 /*                  Produtos em Alta                */
@@ -108,35 +107,41 @@ a:hover{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+.titulos{
+    margin: 40px 0;   
 }
 .titulo{
     text-align: center;
     position: relative;
-    top: -50px;
-    font-size: 50px;
+    margin: 20px;
+    font-size: 50px;  
 }
 .linha{
-    width: 130px;
-    height: 4px;
-    margin: 20px auto;
-    background: black;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 20px;
+    height: 5px;
+    background: rgba(0,0,0,0.5);
     position: relative;
-    top: -50px;
 }
 .produto{
-    max-width: 290px;
+    max-width: 285px;
     min-height: 200px;
-    border-radius: 10px; 
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     margin-top: 30px;
     overflow: hidden;
-    
-    
+    /*effect*/
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.2),
+    10px 0 20px rgba(0,0,0,0.07);
+    background-color: rgb(231, 231, 231);
 }
 .produto:hover{
-    border: 1px solid rgb(75, 75, 75);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.6);
 }
 .imgProduto{
     width: 100%;
@@ -144,9 +149,7 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(228, 228, 228); 
     overflow: hidden;
-    
 }
 .produto img{
     width: 100%;
@@ -157,11 +160,11 @@ a:hover{
     grid-template-columns: 2fr 1fr;
     margin-top: 30px;
     text-align: center;
-    background: rgb(228, 228, 228);
+    border-top: 5px solid rgba(0,0,0,0.5);  
 }
 .descTextProduto{
     display: block;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 800;
     margin: 5px;
     
@@ -170,6 +173,8 @@ a:hover{
     display: block;
     font-size: 17px;
     font-weight: 800;
+    margin-bottom: 10px;
+    
 }
 .btProduto{
     display: flex;
@@ -182,9 +187,9 @@ a:hover{
 }
 .btProduto li{
     list-style: none;
-    width: 25px;
-    height: 25px;
-    font-size: 25px;
+    width: 35px;
+    height: 35px;
+    font-size: 40px;
     font-weight: bold;
     margin: 10px;
     border-radius: 50%;
@@ -196,16 +201,15 @@ a:hover{
 }
 /*                      Oferta do dia                   */
 .ofertaDia{
-    margin-top:150px ;
     width: 100%;
-    min-height: 30vh;
+    height:40vh;
     background: rgb(228, 228, 228);
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    
     position: relative;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.09);
 }
 .descOfertaDia{
     display: flex;
@@ -233,30 +237,6 @@ a:hover{
 .imgOfertaDia img{
     width: 100%;
 }
-.imgOfertaDia .linha{
-    width: 85%;
-    height: 10px;
-    box-shadow: 0 0 50px black;
-    background: rgb(95, 95, 95);
-    filter: blur(10px);
-    position: relative;
-    left: -30px;
-    top: -25px;
-}
-.ofertaDia.of2{
-   margin-bottom: 120px;
-}
-.ofertaDia.of2 .imgOfertaDia{
-    left: 0;
-}
-.ofertaDia.of2 .descOfertaDia{
-    right:0;
-}
-.ofertaDia.of2 .linha{
-    left:3px;
-    width: 90%;
-    
-}
 
 .conceitoDesign{
     margin-top: 100px;
@@ -268,13 +248,12 @@ a:hover{
     flex-wrap: wrap;
 }
 .conceito{
-    max-width: 580px;
+    max-width: 560px;
     margin: 10px;
 }
 .imgConceito{
     width: 100%;
     max-height: 300px;
-    border-radius: 20px 20px 0 0;
     overflow: hidden;
 }
 .imgConceito img{
@@ -287,7 +266,6 @@ a:hover{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    border-radius: 0 0 20px 20px;
     overflow: hidden;
     margin-top: 5px;
 }
@@ -316,16 +294,22 @@ footer{
     min-height: 40vh;
     justify-content: center;
     align-items: center;
-    background: #ff7b00e3;
+    position: relative;
 }
+.fundo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
 
+}
 .contato{
+    min-height: 250px;
     text-align: center;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
-    
+    position: relative;
 }
 .contato h1 {
     color: rgb(255, 255, 255);
@@ -354,13 +338,35 @@ footer{
     text-align: center;
 }
 
-.icon{
-    color: white;
-    font-size: 40px;
-    margin: 30px;
+.sci{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    bottom: 10px;
 }
-.icon:hover{
-    color: rgb(255, 83, 83);
+.sci li{
+   list-style: none;
+}
+.sci a {
+    display: inline-block;
+    margin-left: 15px;
+    background:#222;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+.sci a:hover {
+    background: #e51e2a;
+    transform: translateY(-10px);
+}
+.sci a ion-icon{
+    color: #fff;
+    font-size: 30px;
 }
 
 @media (max-width:999px){
@@ -368,24 +374,26 @@ footer{
         max-width: 500px;
         top: -10px;
     }
-    .ofertaDia.of2 .imgOfertaDia{
-        max-width: 500px;
-        top: 30px;
+
+    .ofertaDia{
+        
+        min-height:80vh;
+        
     }
-    .imgOfertaDia .linha{
-        display: none;
+    .imgOfertaDia{
+        position: relative;
+        margin-top: -40px;
+        max-width:500px;
     }
-    
     
 }
 
 @media (max-width:600px){
     .descOfertaDia h1{
         font-size: 30px;
-        
     }
     .produto{
-        max-width: 90%;
+        max-width: 100%;
         min-height: 200px;
     }
     .imagemExemplo{
@@ -396,7 +404,24 @@ footer{
     .titulo{
         font-size: 40px;
     }
-    
+    .imgFundo img{
+        position:absolute;
+        left: 0;
+        bottom:0;
+        width: 100%;
+        height: auto;
+        margin-top: -40px;
+        object-fit: cover;
+    }
+    .swiper-slide .banner .imgLogo{
+        top: 150px;
+        width: 90%;
+        
+    }
+    .slider{
+        height: 80vh;
+    }
+       
 }
 
 
